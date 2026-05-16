@@ -66,7 +66,7 @@ const Hero = () => {
                     <motion.div variants={itemVariants} className="space-y-4">
                         <div className="flex items-center gap-3">
                             <span className="h-[2px] w-10 bg-blue-500 rounded-full" />
-                            <span className="text-blue-500 font-bold tracking-[0.3em] uppercase text-xs">Front-End Developer</span>
+                            <span className="text-blue-500 font-bold tracking-[0.3em] uppercase text-xs">MERN Stack Developer</span>
                         </div>
                         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-none tracking-tighter">
                             Mishu <span className="text-blue-500">Debnath</span>
@@ -77,7 +77,7 @@ const Hero = () => {
                         className="text-slate-300 text-lg md:text-xl max-w-lg leading-relaxed font-medium"
                         variants={itemVariants}
                     >
-                        Building high-performance, pixel-perfect interfaces that prioritize speed, aesthetics, and user experience.
+                        Building scalable, high-performance web applications with pixel-perfect UI, optimized backend systems, and seamless user experiences.
                     </motion.p>
 
                     <motion.div

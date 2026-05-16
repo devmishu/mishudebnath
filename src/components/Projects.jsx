@@ -5,7 +5,19 @@ import Image from "next/image";
 
 const Projects = () => {
     const projects = [
+
         {
+            id: 1,
+            title: "Marbello — Modern Tile Gallery",
+            category: "E-Commerce / Gallery",
+            description: "A premium, responsive tile gallery web app featuring dynamic search, detailed views, and secure user management for aesthetic tile collections.",
+            image: "/images/merbello.png",
+            tags: ["Next.js", "MongoDB", "BetterAuth", "Tailwind"],
+            live: "https://marbello-one.vercel.app",
+            repo: "https://github.com/devmishu/marbello"
+        },
+        {
+            id: 2,
             title: "KeenKeeper — Smart Relationship Manager",
             category: "SAAS Platform",
             description: "A modern web application designed to help users maintain and nurture their friendships through smart goal tracking, communication analysis, and activity visualization.",
@@ -15,6 +27,7 @@ const Projects = () => {
             repo: "https://github.com/devmishu/circlekeeper"
         },
         {
+            id: 3,
             title: "ToolVerse  Digital Tools Buying Website",
             category: "E-Commerce",
             description: "A modern e-commerce platform featuring a dynamic cart system and responsive UI for a seamless digital tool shopping experience.",
@@ -52,17 +65,17 @@ const Projects = () => {
 
 
                 {/* Projects List */}
-                <div className="grid grid-cols-1 sm:grid-cols-2  gap-8 max-w-175 mx-auto"> {/* কলাম বাড়ানো হয়েছে এবং গ্যাপ কমানো হয়েছে */}
+                <div className="grid grid-cols-1 sm:grid-cols-3  gap-8 max-w-250 mx-auto"> {/* কলাম বাড়ানো হয়েছে এবং গ্যাপ কমানো হয়েছে */}
                     {projects.map((project, index) => (
                         <motion.div
-                            key={index}
-                            variants={cardVariants} // অ্যানিমেশন ভ্যারিয়েন্টস যোগ করা হলো
+                            key={project.id}
+                            variants={cardVariants}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            className="shadow-lg shadow-white/5 rounded-2xl overflow-hidden bg-slate-900/50 border border-white/10 group"
+                            className="shadow-lg shadow-white/5 rounded-2xl overflow-hidden bg-slate-900/50 border border-white/10 group flex flex-col h-full"
                         >
-                            {/* Image Section - হাইট ফিক্সড করা হয়েছে */}
+                            {/* Image */}
                             <div className="relative overflow-hidden h-48 md:h-56 w-full">
                                 <img
                                     src={project.image}
@@ -71,57 +84,51 @@ const Projects = () => {
                                 />
                             </div>
 
-                            {/* Content Section - প্যাডিং কমানো হয়েছে */}
-                            <div className="p-6 md:p-8 flex flex-col space-y-4">
+                            {/* Content */}
+                            <div className="p-6 md:p-8 flex flex-col flex-1 space-y-4">
+
                                 <span className="text-blue-500 text-[10px] font-bold tracking-[0.2em] uppercase">
                                     {project.category}
                                 </span>
 
-                                {/* টাইটেল সাইজ ছোট করা হয়েছে */}
                                 <h3 className="text-xl md:text-2xl font-bold text-white line-clamp-1">
                                     {project.title}
                                 </h3>
 
-                                {/* ডেসক্রিপশন লাইন লিমিট করা হয়েছে */}
-                                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3">
+                                {/* এই অংশটা grow করবে */}
+                                <p className="text-slate-400 text-sm leading-relaxed line-clamp-3 flex-1">
                                     {project.description}
                                 </p>
 
                                 <div className="flex flex-wrap gap-3">
                                     {project.tags.map(tag => (
-                                        <span key={tag} className="text-[10px] font-medium text-slate-500 uppercase tracking-wider">
+                                        <span
+                                            key={tag}
+                                            className="text-[10px] font-medium text-slate-500 uppercase tracking-wider"
+                                        >
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
 
                                 <div className="flex gap-3 pt-2">
-                                    {/* Live Link Button */}
                                     <a
                                         href={project.live}
                                         target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 px-4 py-2 bg-white text-[#020617] rounded-lg hover:bg-slate-200 transition-all duration-300 text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"
+                                        className="flex-1 px-4 py-2 bg-white text-[#020617] rounded-lg hover:bg-slate-200 transition-all duration-300 text-sm font-bold flex items-center justify-center gap-2"
                                     >
                                         Live
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                        </svg>
                                     </a>
 
-                                    {/* Repo Link Button */}
                                     <a
                                         href={project.repo}
                                         target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 px-4 py-2 bg-white text-[#020617] rounded-lg hover:bg-slate-200 transition-all duration-300 text-sm font-bold flex items-center justify-center gap-2 cursor-pointer"
+                                        className="flex-1 px-4 py-2 bg-white text-[#020617] rounded-lg hover:bg-slate-200 transition-all duration-300 text-sm font-bold flex items-center justify-center gap-2"
                                     >
                                         Repo
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                        </svg>
                                     </a>
                                 </div>
+
                             </div>
                         </motion.div>
                     ))}

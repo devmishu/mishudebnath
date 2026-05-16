@@ -15,9 +15,9 @@ const TechStack = () => {
         { name: "React.js", icon: "https://cdn.simpleicons.org/react/61DAFB" },
         { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/white" },
         { name: "Tailwind CSS", icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
-        // { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933" },
+        { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933" },
         { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb/47A248" },
-        // { name: "Express.js", icon: "https://cdn.simpleicons.org/express/white" },
+        { name: "Express.js", icon: "https://cdn.simpleicons.org/express/white" },
         // { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6" },
         { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
     ];

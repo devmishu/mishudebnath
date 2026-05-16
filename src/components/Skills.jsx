@@ -8,6 +8,25 @@ const FrontendIcon = () => (
   </svg>
 );
 
+const BackendIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="size-6 text-blue-500"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth={2}
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M4 7c0-1.657 3.582-3 8-3s8 1.343 8 3-3.582 3-8 3-8-1.343-8-3z
+         M4 7v5c0 1.657 3.582 3 8 3s8-1.343 8-3V7
+         M4 12v5c0 1.657 3.582 3 8 3s8-1.343 8-3v-5"
+    />
+  </svg>
+);
+
 const ToolsIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="size-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
     <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -64,7 +83,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold text-white">Frontend Core</h3>
             </div>
             <div className="flex flex-wrap gap-3">
-              {["HTML","CSS","React.js", "JabaScript", "Next.js", "Tailwind CSS","Daisy UI","Hero UI",].map((skill) => (
+              {["HTML", "CSS", "JabaScript", "React.js", "Next.js", "Tailwind CSS", "Daisy UI", "Hero UI",].map((skill) => (
                 <motion.div
                   key={skill}
                   variants={chipVariants}
@@ -77,7 +96,32 @@ const Skills = () => {
             </div>
           </motion.div>
 
-          {/* Card 2: DevOps & Tools */}
+          {/* Card 2: Backend */}
+          <motion.div
+            variants={itemVariants}
+            className="bg-slate-900/80 p-8 rounded-[32px] border border-white/10 shadow-xl backdrop-blur-md hover:border-blue-500/30 transition-all duration-300"
+          >
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                <BackendIcon />
+              </div>
+              <h3 className="text-xl font-bold text-white">Backend Core</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {["Node.js", "Express.js", "MongoDB"].map((skill) => (
+                <motion.div
+                  key={skill}
+                  variants={chipVariants}
+                  className="flex items-center gap-2 px-4 py-2 bg-slate-800/50 rounded-full border border-white/5 hover:border-blue-500/30 transition-colors"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
+                  <span className="text-sm font-medium text-slate-100">{skill}</span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Card 3: Tools */}
           <motion.div
             variants={itemVariants}
             className="bg-slate-900/80 p-8 rounded-[32px] border border-white/10 shadow-xl backdrop-blur-md hover:border-blue-500/30 transition-all duration-300"
@@ -89,7 +133,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold text-white">Tools</h3>
             </div>
             <div className="flex flex-wrap gap-3">
-              {["VS Code", "Git", "GitHub", "Figma"].map((tool) => (
+              {["VS Code", "Git", "GitHub", "Postman", "Figma"].map((tool) => (
                 <motion.div
                   key={tool}
                   variants={chipVariants}
