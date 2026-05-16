@@ -7,6 +7,9 @@ import CustomCursor from '@/components/CustomCursor';
 export const metadata = {
   title: 'Mishu Debnath | Portfolio',
   description: 'Portfolio of Mishu Debnath - Web Developer and Designer',
+  icons: {
+    icon: 'assets/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
