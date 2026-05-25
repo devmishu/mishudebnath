@@ -87,9 +87,9 @@ const Hero = () => {
                         <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-2xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.3)] flex items-center gap-2 group z-50">
 
                             <a
-                                href="https://drive.google.com/uc?export=download&id=1wHkxFgBl8dvnNEFzyWhHVF9drT0Jxyk0"
+                                href="https://drive.google.com/uc?export=download&id=1_aY-Z3RUTbSD6wRePfHJNo3wYKAbm1Bi"
                                 download="Mishu_Devnath_CV"
-                            >
+                            > 
                                 Download Resume
                             </a>
                             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
