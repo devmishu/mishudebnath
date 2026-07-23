@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "PromptVerse — AI Prompt Sharing & Marketplace Platform",
+        "category": "AI Marketplace / SAAS",
+        "description": "A secure backend server powering an AI prompt sharing and marketplace platform with RESTful APIs, JWT authentication, role-based access control, and Stripe payment integration.",
+        "image": "/images/promptverse.png",
+        "tags": [
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT"
+        ],
+        "live": "https://promptverse-blue.vercel.app",
+        "repo": "https://github.com/devmishu/promptverse"
+    },
+    {
+        "id": 2,
+        "title": "Auto Hive — Car Rental Platform",
+        "category": "E-Commerce / Booking",
+        "description": "A modern and responsive full-stack car rental platform where users can explore available cars, view detailed car information, book vehicles, manage bookings, and add their own car listings securely.",
+        "image": "/images/autohive.png",
+        "tags": [
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "MongoDB",
+            "Node.js",
+            "Express.js"
+        ],
+        "live": "https://autohive-sepia.vercel.app",
+        "repo": "https://github.com/devmishu/autohive"
+    },
+    {
+        "id": 3,
+        "title": "EventHub — Premium Event Management Platform",
+        "category": "Event Management / SAAS",
+        "description": "An elegant, modern, and production-ready full-stack event management web application built with the MERN Stack, TypeScript, and Next.js, featuring Apple-inspired minimalism and real-time data analytics.",
+        "image": "/images/eventhub.png",
+        "tags": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "HeroUI",
+            "MongoDB",
+            "Node.js"
+        ],
+        "live": "https://eventhub-rho-three.vercel.app",
+        "repo": "https://github.com/devmishu/eventhub"
+    },
+    {
+        "id": 4,
+        "title": "NextJourney — Full Stack Agentic AI Application",
+        "category": "AI Application / SAAS",
+        "description": "A production-ready, full-stack Agentic AI application built with Next.js, TypeScript, and Node.js, integrating advanced AI capabilities with secure authentication and a responsive UI.",
+        "image": "/images/nextjourney.png",
+        "tags": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node.js",
+            "MongoDB",
+            "AI"
+        ],
+        "live": "https://nextjourney-six.vercel.app",
+        "repo": "https://github.com/devmishu/nextjourney"
+    },
+    {
+        "title": "Marbello — Modern Tile Gallery",
+        "category": "E-Commerce / Gallery",
+        "description": "A premium, responsive tile gallery web app featuring dynamic search, detailed views, and secure user management for aesthetic tile collections.",
+        "image": "/images/merbello.png",
+        "tags": [
+            "Next.js",
+            "MongoDB",
+            "BetterAuth",
+            "Tailwind"
+        ],
+        "live": "https://marbello-one.vercel.app",
+        "repo": "https://github.com/devmishu/marbello"
+    }
+]

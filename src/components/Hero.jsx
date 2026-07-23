@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { FaLinkedinIn, FaGithub, FaFacebookF } from "react-icons/fa";
 
 const Hero = () => {
     const containerVariants = {
@@ -81,24 +82,56 @@ const Hero = () => {
                     </motion.p>
 
                     <motion.div
-                        className="flex flex-wrap gap-4"
+                        className="flex flex-wrap items-center gap-6"
                         variants={itemVariants}
                     >
-                        <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-2xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.3)] flex items-center gap-2 group z-50">
+                        <div className="flex flex-wrap gap-4">
+                            <button className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-2xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.3)] flex items-center gap-2 group z-50">
+                                <a
+                                    href="https://drive.google.com/uc?export=download&id=1_aY-Z3RUTbSD6wRePfHJNo3wYKAbm1Bi"
+                                    download="Mishu_Devnath_CV"
+                                >
+                                    Download Resume
+                                </a>
+                                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </button>
+                            <button className="px-8 py-4 bg-slate-900/80 hover:bg-slate-800 text-white font-bold rounded-2xl border border-white/10 transition-all backdrop-blur-md">
+                                <a href="#contact">Get in Touch</a>
+                            </button>
+                        </div>
 
+                        {/* Social Media Icons */}
+                        <div className="flex items-center gap-3">
                             <a
-                                href="https://drive.google.com/uc?export=download&id=1_aY-Z3RUTbSD6wRePfHJNo3wYKAbm1Bi"
-                                download="Mishu_Devnath_CV"
-                            > 
-                                Download Resume
+                                href="https://www.linkedin.com/in/mishudeb"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-12 h-12 rounded-2xl bg-slate-900/80 border border-white/10 flex items-center justify-center text-slate-300 hover:text-blue-500 hover:border-blue-500/50 hover:bg-slate-800 transition-all backdrop-blur-md shadow-lg"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedinIn className="w-5 h-5" />
                             </a>
-                            <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                        </button>
-                        <button className="px-8 py-4 bg-slate-900/80 hover:bg-slate-800 text-white font-bold rounded-2xl border border-white/10 transition-all backdrop-blur-md">
-                            <a href="#contact">Get in Touch</a>
-                        </button>
+                            <a
+                                href="https://github.com/devmishu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-12 h-12 rounded-2xl bg-slate-900/80 border border-white/10 flex items-center justify-center text-slate-300 hover:text-blue-500 hover:border-blue-500/50 hover:bg-slate-800 transition-all backdrop-blur-md shadow-lg"
+                                aria-label="GitHub"
+                            >
+                                <FaGithub className="w-5 h-5" />
+                            </a>
+                            <a
+                                href="https://www.facebook.com/devmishunath"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-12 h-12 rounded-2xl bg-slate-900/80 border border-white/10 flex items-center justify-center text-slate-300 hover:text-blue-500 hover:border-blue-500/50 hover:bg-slate-800 transition-all backdrop-blur-md shadow-lg"
+                                aria-label="Facebook"
+                            >
+                                <FaFacebookF className="w-5 h-5" />
+                            </a>
+                        </div>
                     </motion.div>
                 </motion.div>
 
@@ -134,27 +167,6 @@ const Hero = () => {
                             className="w-full h-full object-cover grayscale-[10%]"
                         />
                     </motion.div>
-
-                    {/* Statistics - Orbital Positions */}
-
-
-
-
-                    {/* 150 Finished Projects */}
-                    {/* <motion.div
-                        className="absolute -bottom-4 -right-4  bg-slate-900/90 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-2xl flex items-center gap-3 z-20"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 1.4 }}
-                    >
-                        <div className="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center border border-emerald-500/30">
-                            <span className="text-emerald-500 font-bold text-lg">150</span>
-                        </div>
-                        <div>
-                            <p className="text-white font-bold text-sm leading-none">Finished</p>
-                            <p className="text-slate-400 text-xs">Projects</p>
-                        </div>
-                    </motion.div> */}
                 </div>
             </div>
         </section>

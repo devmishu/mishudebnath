@@ -83,7 +83,7 @@ const Skills = () => {
               <h3 className="text-xl font-bold text-white">Frontend Core</h3>
             </div>
             <div className="flex flex-wrap gap-3">
-              {["HTML", "CSS", "JabaScript", "React.js", "Next.js", "Tailwind CSS", "Daisy UI", "Hero UI",].map((skill) => (
+              {["Next.js", "React.js","JabaScript", "HTML", "CSS", "Tailwind CSS", "Daisy UI", "Hero UI",].map((skill) => (
                 <motion.div
                   key={skill}
                   variants={chipVariants}

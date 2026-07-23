@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 
 const HeroUIIcon = () => (
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 md:w-12 md:h-12 text-white">
-        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
 
 const TechStack = () => {
     const technologies = [
-        { name: "React.js", icon: "https://cdn.simpleicons.org/react/61DAFB" },
         { name: "Next.js", icon: "https://cdn.simpleicons.org/nextdotjs/white" },
+        { name: "React.js", icon: "https://cdn.simpleicons.org/react/61DAFB" },
+        { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
+        { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6" },
         { name: "Tailwind CSS", icon: "https://cdn.simpleicons.org/tailwindcss/06B6D4" },
         { name: "Node.js", icon: "https://cdn.simpleicons.org/nodedotjs/339933" },
-        { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb/47A248" },
         { name: "Express.js", icon: "https://cdn.simpleicons.org/express/white" },
-        // { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178C6" },
-        { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript/F7DF1E" },
+        { name: "MongoDB", icon: "https://cdn.simpleicons.org/mongodb/47A248" },
     ];
 
     const containerVariants = {
@@ -45,7 +45,7 @@ const TechStack = () => {
         <section id="tech-stack" className="w-full bg-background py-24 px-6 flex flex-col items-center">
             <div className="max-w-6xl w-full">
                 {/* Section Header */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -60,7 +60,7 @@ const TechStack = () => {
                 </motion.div>
 
                 {/* Tech Grid */}
-                <motion.div 
+                <motion.div
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -68,7 +68,7 @@ const TechStack = () => {
                     className="flex flex-wrap gap-8 md:gap-12 justify-center"
                 >
                     {technologies.map((tech) => (
-                        <motion.div 
+                        <motion.div
                             key={tech.name}
                             variants={itemVariants}
                             whileHover={{ y: -5 }}
@@ -76,13 +76,13 @@ const TechStack = () => {
                         >
                             {/* Glassmorphic Icon Container */}
                             <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-slate-900/80 backdrop-blur-xl border border-slate-700 flex items-center justify-center shadow-lg transition-all duration-300 group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] group-hover:border-blue-500/50">
-                                <img 
-                                    src={tech.icon} 
-                                    alt={tech.name} 
+                                <img
+                                    src={tech.icon}
+                                    alt={tech.name}
                                     className="w-10 h-10 md:w-12 md:h-12 object-contain"
                                 />
                             </div>
-                            
+
                             {/* Technology Name */}
                             <span className="text-slate-100 font-medium text-sm md:text-base text-center">
                                 {tech.name}

@@ -27,14 +27,14 @@ const Footer = () => {
                     >
                         LinkedIn
                     </a>
-                    {/* <a
-                        href="https://twitter.com"
+                    <a
+                        href="https://www.facebook.com/devmishunath"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-slate-400 hover:text-white transition-colors text-sm font-medium"
                     >
-                        Twitter
-                    </a> */}
+                        facebook
+                    </a> 
                 </div>
 
             </div>
