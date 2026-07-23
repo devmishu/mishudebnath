@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
@@ -119,6 +120,14 @@ const Projects = () => {
                                             </div>
 
                                             <div className="flex gap-3 pt-2">
+
+
+                                                <Link
+                                                    href={`/projects/${project.id}`}
+                                                    className="flex-1 px-4 py-2 bg-white text-[#020617] rounded-lg hover:bg-slate-200 transition-all duration-300 text-sm font-bold flex items-center justify-center gap-2"
+                                                >
+                                                    View Details
+                                                </Link>
                                                 <a
                                                     href={project.live}
                                                     target="_blank"
@@ -128,15 +137,6 @@ const Projects = () => {
                                                     Live
                                                 </a>
 
-                                                <a
-                                                    href={project.repo}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="flex-1 px-4 py-2 bg-white text-[#020617] rounded-lg hover:bg-slate-200 transition-all duration-300 text-sm font-bold flex items-center justify-center gap-2"
-                                                >
-                                                    Repo
-                                                </a>
-                                                
                                             </div>
                                         </div>
                                     </motion.div>

@@ -3,16 +3,28 @@
         "id": 1,
         "title": "PromptVerse — AI Prompt Sharing & Marketplace Platform",
         "category": "AI Marketplace / SAAS",
-        "description": "A secure backend server powering an AI prompt sharing and marketplace platform with RESTful APIs, JWT authentication, role-based access control, and Stripe payment integration.",
+        "description": "A modern full-stack AI Prompt Sharing & Marketplace Platform where users can discover, share, bookmark, review, and monetize high-quality AI prompts for tools like ChatGPT, Gemini, Claude, Midjourney, and more. Features robust dashboards for Users, Creators, and Admins with analytics, moderation tools, payment management, and role-based access control.",
         "image": "/images/promptverse.png",
         "tags": [
+            "Next.js",
+            "React",
+            "Tailwind CSS",
             "Node.js",
             "Express.js",
             "MongoDB",
-            "JWT"
+            "Stripe"
         ],
         "live": "https://promptverse-blue.vercel.app",
-        "repo": "https://github.com/devmishu/promptverse"
+        "repo": "https://github.com/devmishu/promptverse",
+        "backendRepo": "https://github.com/devmishu/promptverse-server",
+        "challenges": [
+            "Managing complex state handling and real-time synchronization securely across protected client routes and role-based dashboards.",
+            "Integrating secure one-time Stripe payment transactions and handling backend session/JWT validation seamlessly."
+        ],
+        "improvements": [
+            "Integrating advanced automated unit and integration testing pipelines.",
+            "Expanding multi-language support and deep analytics dashboards with custom reporting features."
+        ]
     },
     {
         "id": 2,
@@ -29,7 +41,16 @@
             "Express.js"
         ],
         "live": "https://autohive-sepia.vercel.app",
-        "repo": "https://github.com/devmishu/autohive"
+        "repo": "https://github.com/devmishu/autohive",
+        "backendRepo": "https://github.com/devmishu/autohive-api",
+        "challenges": [
+            "Handling date-range availability conflicts and database queries efficiently for overlapping vehicle bookings.",
+            "Ensuring responsive layout design across various mobile and desktop viewports with dynamic filtering states."
+        ],
+        "improvements": [
+            "Adding a real-time chat feature between vehicle owners and renters.",
+            "Implementing interactive maps for pickup and drop-off locations."
+        ]
     },
     {
         "id": 3,
@@ -46,7 +67,16 @@
             "Node.js"
         ],
         "live": "https://eventhub-rho-three.vercel.app",
-        "repo": "https://github.com/devmishu/eventhub"
+        "repo": "https://github.com/devmishu/eventhub",
+        "backendRepo": "https://github.com/devmishu/eventhub-server",
+        "challenges": [
+            "Configuring strict TypeScript interfaces across complex API requests and state management components.",
+            "Optimizing dashboard rendering performance while dealing with heavy statistical data sets visualized via Recharts."
+        ],
+        "improvements": [
+            "Introducing email notification reminders for upcoming booked events using an external queue service.",
+            "Adding export functionality for attendee reports in PDF and CSV formats."
+        ]
     },
     {
         "id": 4,
@@ -63,9 +93,19 @@
             "AI"
         ],
         "live": "https://nextjourney-six.vercel.app",
-        "repo": "https://github.com/devmishu/nextjourney"
+        "repo": "https://github.com/devmishu/nextjourney",
+        "backendRepo": "https://github.com/devmishu/nextjourney-server",
+        "challenges": [
+            "Managing asynchronous streaming responses from language models while maintaining a smooth and interactive user interface.",
+            "Handling rate limits and optimizing token usage patterns across user requests securely on the backend."
+        ],
+        "improvements": [
+            "Implementing user history tracking with conversation branching support.",
+            "Adding support for multi-modal inputs including image analysis prompts."
+        ]
     },
     {
+        "id": 5,
         "title": "Marbello — Modern Tile Gallery",
         "category": "E-Commerce / Gallery",
         "description": "A premium, responsive tile gallery web app featuring dynamic search, detailed views, and secure user management for aesthetic tile collections.",
@@ -77,6 +117,15 @@
             "Tailwind"
         ],
         "live": "https://marbello-one.vercel.app",
-        "repo": "https://github.com/devmishu/marbello"
+        "repo": "https://github.com/devmishu/marbello",
+        "backendRepo": "",
+        "challenges": [
+            "Integrating BetterAuth smoothly with Next.js route handlers and managing session persistence securely.",
+            "Optimizing high-resolution image grids and assets to ensure an Apple-like smooth minimal UI aesthetic."
+        ],
+        "improvements": [
+            "Adding a customized sample-ordering cart and checkout workflow for clients.",
+            "Introducing advanced filter options based on texture, finish, and dimension dimensions."
+        ]
     }
 ]
